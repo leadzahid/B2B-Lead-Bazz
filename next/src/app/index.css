@@ -1,0 +1,124 @@
+.wave-dark[data-v-922fb0dd] {
+  bottom: 0;
+  height: auto;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+}
+
+.wave-dark .wave-path-2[data-v-922fb0dd] {
+  fill: #e23fec66;
+  animation: wave2-922fb0dd 15s ease-in-out infinite;
+}
+
+.wave-dark .wave-path-3[data-v-922fb0dd] {
+  fill: #06f3;
+  animation: wave3-922fb0dd 15s ease-in-out infinite;
+}
+
+.wave-dark .wave-path-1[data-v-922fb0dd] {
+  fill: #9565df;
+  animation: wave1-922fb0dd 15s ease-in-out infinite;
+}
+
+.wave-dark .wave-path[data-v-922fb0dd] {
+  transform: scaleX(1.2);
+  transform-origin: 50% 100%;
+}
+
+@keyframes wave2-922fb0dd {
+  25% {
+    transform-origin: 0 100%;
+  }
+
+  50% {
+    transform: scale(1.3, 0.8);
+  }
+
+  75% {
+    transform-origin: 100% 100%;
+  }
+}
+
+@keyframes wave3-922fb0dd {
+  5% {
+    transform-origin: 100% 100%;
+  }
+
+  50% {
+    transform: scale(1.2, 0.9);
+  }
+
+  75% {
+    transform-origin: 0 100%;
+  }
+}
+
+@keyframes wave1-922fb0dd {
+  25% {
+    transform: scale(1.4, 1.3);
+    transform-origin: 0 100%;
+  }
+
+  75% {
+    transform: scale(1.4, 0.7);
+    transform-origin: 100% 100%;
+  }
+}
+
+/* From Uiverse.io by satyamchaudharydev */
+.loading {
+  --speed-of-animation: 0.9s;
+  --gap: 6px;
+  --first-color: #4c86f9;
+  --second-color: #49a84c;
+  --third-color: #f6bb02;
+  --fourth-color: #f6bb02;
+  --fifth-color: #2196f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  gap: 6px;
+  height: 100px;
+}
+
+.loading span {
+  width: 4px;
+  height: 50px;
+  background: var(--first-color);
+  animation: scale var(--speed-of-animation) ease-in-out infinite;
+}
+
+.loading span:nth-child(2) {
+  background: var(--second-color);
+  animation-delay: -0.8s;
+}
+
+.loading span:nth-child(3) {
+  background: var(--third-color);
+  animation-delay: -0.7s;
+}
+
+.loading span:nth-child(4) {
+  background: var(--fourth-color);
+  animation-delay: -0.6s;
+}
+
+.loading span:nth-child(5) {
+  background: var(--fifth-color);
+  animation-delay: -0.5s;
+}
+
+@keyframes scale {
+  0%,
+  40%,
+  100% {
+    transform: scaleY(0.05);
+  }
+
+  20% {
+    transform: scaleY(1);
+  }
+}
