@@ -29,10 +29,10 @@ function Services() {
     },
     {
       id: 4,
-      title: "Data Enrichment",
+      title: "80-95% Data Enrichment",
       params: "Data-Enrichment",
       icon: <TbDeviceAnalytics />,
-      desc: "Enhance your database with our data enrichment services. We provide cell phone enrichment, missing data enrichment, email finding, and direct phone number sourcing to ensure accurate and complete contact information.",
+      desc: "We provide cell phone enrichment, missing data enrichment, email finding, and direct phone sourcing — delivering accurate and complete contact info.",
     },
     {
       id: 5,

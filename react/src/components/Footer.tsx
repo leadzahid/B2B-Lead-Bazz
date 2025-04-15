@@ -80,12 +80,13 @@ function Footer() {
               >
                 Why Hire Us
               </Link>
-              <Link
-                to="/portfolio"
+              <a
+                href="https://www.fiverr.com/leadzahid"
+                target="_blank"
                 className="flex items-center cursor-pointer duration-200 ease-linear transition-all hover:translate-x-2"
               >
                 Portfolio
-              </Link>
+              </a>
             </ul>
           </div>
 

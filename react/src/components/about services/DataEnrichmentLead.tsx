@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const dataEnrichmentInfo = {
   title: "Data Enrichment Lead Generation",
   description:
-    "Enhance your business data with accurate, up-to-date information. We refine and enrich your existing leads by adding verified insights, increasing the value of your database.",
+    "We enhance your business data with verified, up-to-date insights. Using cross-verification, manual validation with premium tools, and years of experience, we ensure 80–95% match and enrichment rates — even for the hardest-to-find data.",
   enrichmentTypes: [
     "Email Verification",
     "Phone Number Validation",
@@ -18,6 +18,7 @@ const dataEnrichmentInfo = {
     "Company Websites",
     "Social Media Scraping",
     "API Data Sources",
+    "Contact details directly from LinkedIn profiles",
   ],
   benefits: [
     "Higher Conversion Rates",
@@ -55,7 +56,7 @@ const DataEnrichmentLead = () => {
         <h1 className="text-4xl font-bold text-[#7e22ce]">
           {dataEnrichmentInfo.title}
         </h1>
-        <p className="text-lg text-gray-600 max-w-3xl mx-auto mt-4">
+        <p className=" text-gray-600 max-w-3xl mx-auto mt-4">
           {dataEnrichmentInfo.description}
         </p>
       </div>
@@ -137,7 +138,10 @@ const InfoCard = ({
     <ul className="mt-4 space-y-2">
       {items.map((item, index) => (
         <li key={index} className="flex items-center text-gray-700">
-          <FaCheckCircle className="text-[#7e22ce] mr-2" /> {item}
+          <span className="text-[#7e22ce] mr-2">
+            <FaCheckCircle />
+          </span>
+          {item}
         </li>
       ))}
     </ul>
